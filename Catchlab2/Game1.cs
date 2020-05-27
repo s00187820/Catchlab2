@@ -23,7 +23,7 @@ namespace Catchlab2
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            IsMouseVisible = true;
             AudioManager.SoundEffects = Loader.ContentLoad<SoundEffect>(Content, "Audio");
             AudioManager.Play(ref sf, "Badges_6");
             base.Initialize();
@@ -68,10 +68,10 @@ namespace Catchlab2
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-            spriteBatch.Draw(badges["Badges_0"], new Vector2(20, 20), Color.White);
-            spriteBatch.Draw(badges["Badges_1"], new Vector2(30, 130), Color.White);
-            spriteBatch.Draw(badges["Badges_2"], new Vector2(40, 240), Color.White);
-            spriteBatch.Draw(badges["Badges_3"], new Vector2(250, 50), Color.White);
+            spriteBatch.Draw(badges["Badges_0"], new Vector2(500, 50), Color.White);
+            spriteBatch.Draw(badges["Badges_1"], new Vector2(300, 130), Color.White);
+            spriteBatch.Draw(badges["Badges_2"], new Vector2(400, 240), Color.White);
+            spriteBatch.Draw(badges["Badges_3"], new Vector2(20, 50), Color.White);
             spriteBatch.Draw(badges["Badges_4"], new Vector2(360, 60), Color.White);
             spriteBatch.End();
             // TODO: Add your drawing code here
